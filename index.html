@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Altona Weather Widget</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { margin: 0; padding: 0; }
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: sans-serif;
+      background: #fff;
+    }
+    #wwo-weather-widget-3 {
+      max-width: 100%;
+      height: 150px;
+    }
   </style>
 </head>
 <body>
   <div id="wwo-weather-widget-3"></div>
-  <script type="text/javascript" src="https://www.worldweatheronline.com/widget/v5/weather-widget.ashx?loc=127666&wid=3&tu=1&div=wwo-weather-widget-3&custom_header=Altona" async></script>
+  <script async src="https://www.worldweatheronline.com/widget/v5/weather-widget.ashx?loc=127666&wid=3&tu=1&div=wwo-weather-widget-3&custom_header=Altona"></script>
   <noscript>
-    <a href="https://www.worldweatheronline.com/altona-weather/victoria/au.aspx" alt="Hour by hour Altona weather">Altona weather forecast hourly</a>
+    <a href="https://www.worldweatheronline.com/altona-weather/victoria/au.aspx" style="font-size: 12px; color: #444;">
+      View Altona Weather Forecast
+    </a>
   </noscript>
 </body>
 </html>
