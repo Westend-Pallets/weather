@@ -2,27 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Altona Weather</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      background: #000;
       overflow: hidden;
-      font-family: sans-serif;
-      background: #fff;
-    }
-    #wwo-weather-widget-3 {
-      max-width: 100%;
-      height: 150px;
     }
   </style>
 </head>
 <body>
-  <div id="wwo-weather-widget-3"></div>
-  <script async src="https://www.worldweatheronline.com/widget/v5/weather-widget.ashx?loc=127666&wid=3&tu=1&div=wwo-weather-widget-3&custom_header=Altona"></script>
-  <noscript>
-    <a href="https://www.worldweatheronline.com/altona-weather/victoria/au.aspx" style="font-size: 12px; color: #444;">
-      View Altona Weather Forecast
-    </a>
-  </noscript>
+  <div id="ww_33cfdec1dec1c" v="1.3" loc="auto" a='{
+    "t":"ticker",
+    "lang":"en",
+    "sl_lpl":1,
+    "ids":[],
+    "font":"Arial",
+    "sl_ics":"one_a",
+    "sl_sot":"celsius",
+    "cl_bkg":"image",
+    "cl_font":"#FFFFFF",
+    "cl_cloud":"#FFFFFF",
+    "cl_persp":"#81D4FA",
+    "cl_sun":"#FFC107",
+    "cl_moon":"#FFC107",
+    "cl_thund":"#FF5722"
+  }'>
+    Weather Data Source:
+    <a href="https://wetterlang.de" id="ww_33cfdec1dec1c_u" target="_blank">Wetter vorhersage 30 tage</a>
+  </div>
+  <script async src="https://app3.weatherwidget.org/js/?id=ww_33cfdec1dec1c"></script>
 </body>
 </html>
